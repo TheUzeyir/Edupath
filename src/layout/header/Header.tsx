@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 import { RxAvatar } from "react-icons/rx";
 import { MdOutlineShoppingBag } from "react-icons/md";
@@ -16,7 +17,7 @@ export default function Header() {
 
         {/* Naviqasiya */}
         <nav className="space-x-6 text-white font-medium hidden md:flex">
-          <NavItem label="Home" />
+          <NavItem label="Home" href="/main" />
           <NavItem label="Courses" />
           <NavItem label="About Us" />
           <NavItem label="Pages" />
@@ -40,11 +41,21 @@ export default function Header() {
   );
 }
 
-function NavItem({ label }: { label: string }) {
+// Naviqasiya itemi
+function NavItem({
+  label,
+  href = "#",
+}: {
+  label: string;
+  href?: string;
+}) {
   return (
-    <a href="#" className="flex items-center gap-1 hover:text-gray-200">
+    <Link
+      href={href}
+      className="flex items-center gap-1 hover:text-gray-200"
+    >
       {label}
       <IoChevronDown className="text-sm" />
-    </a>
+    </Link>
   );
 }
