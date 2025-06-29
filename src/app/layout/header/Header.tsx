@@ -18,10 +18,10 @@ export default function Header() {
         {/* Naviqasiya */}
         <nav className="space-x-6 text-white font-medium hidden md:flex">
           <NavItem label="Home" href="/main" />
-          <NavItem label="Courses" />
-          <NavItem label="About Us" />
+          <NavItem label="Courses" href="/course" />
+          <NavItem label="About Us" href="/about" />
           <NavItem label="Pages" />
-          <NavItem label="Contact Us" />
+          <NavItem label="Contact Us" href="/contack" />
         </nav>
 
         {/* İkonlar */}
