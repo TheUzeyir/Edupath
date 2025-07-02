@@ -1,12 +1,14 @@
 import Footer from "./layout/footer/Footer";
 import Header from "./layout/header/Header";
-import Main from "./main/page";
+import About from "./page/About/About";
+import HomePage from "./page/Home/Home";
 
 export default function Home() {
   return (
     <>
       <Header/>
-      <Main/>
+      {/* <HomePage/> */}
+      <About/>
       <Footer/>
     </>
   );

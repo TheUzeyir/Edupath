@@ -1,2 +1,155 @@
 @import "tailwindcss";
 
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.root{
+  font-family: Manrope, sans-serif;
+}
+
+
+.email-address {
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* Remove default underline */
+}
+
+.email-address::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000; /* Change to your preferred underline color */
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+
+.email-address:hover::after {
+  width: 100%;
+  left: 0;
+  transition-delay: 0.2s; /* Delay the underline by 0.2 seconds */
+}
+
+.custom-color {
+  width: 500px;
+  height: 509px;
+  margin-right: 25px;
+  margin-bottom: 24px;
+  background-color: #ffd25d;
+  border-radius: 50%; /* Adjusted for proper parsing */
+}
+
+/* Footer */
+.footer-list > ul > li {
+  transition-duration: 1s;
+}
+
+.footer-list > ul > li:hover {
+  color: #5956e9;
+}
+
+/* #testimonials */
+
+.testimonial-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonials-content {
+  flex-shrink: 0;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+/* blog */
+.dot::before {
+  content: "•";
+  margin: 0 0.5rem; /* Nöqtə ilə söz arasındakı məsafə */
+}
+.blog-unordredlist > li {
+  padding-bottom: 15px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-tag>span{
+  background-color: #F1F3FE;
+  margin-right: 10px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  color: grey;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.blog-tag>span:hover{
+ background-color: #5956e9;
+ color: white;
+}
+
+/* =======
+.group {
+  position: relative;
+  overflow: hidden; 
+}
+
+.group:hover .btn-course {
+  display: block;
+}
+
+.group:hover img {
+
+  transition: transform 0.3s ease-in-out; 
+}
+
+.group img {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.group .btn-course {
+  display: none;
+  text-align: center;
+}
+
+.group .p-4 {
+  position: relative;
+  z-index: 10; 
+  transition: top 0.3s ease-in-out; 
+}
+
+.group:hover .p-4 {
+  top: -10px;
+}
+
+.group .content-wrapper {
+  position: relative;
+  top: 0; 
+  transition: top 0.4s ease-in-out; 
+}
+
+.group:hover .content-wrapper {
+  top: -50px; 
+}
+>>>>>>> e5a214bac2325c7ef4d54b5f142781f29ba21115 */

@@ -1,61 +1,26 @@
-"use client";
+import React from "react";
+import Logo from "./Logo";
+import CategoryBar from "./CategoryBar";
+import SearchBar from "./SearchBar";
+import Navigation from "./Navigation";
+import UserActions from "./UserActions";
+import Basket from "./Basket";
 
-import Link from "next/link";
-import { CiSearch } from "react-icons/ci";
-import { RxAvatar } from "react-icons/rx";
-import { MdOutlineShoppingBag } from "react-icons/md";
-import { IoChevronDown } from "react-icons/io5";
-
-export default function Header() {
+const Header = () => {
   return (
-    <header className="bg-purple-600 shadow-md py-4">
-      <div className="mx-auto px-12 max-w-screen-xl flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-2xl font-bold text-white">
-          UdyPath
-        </div>
-
-        {/* Naviqasiya */}
-        <nav className="space-x-6 text-white font-medium hidden md:flex">
-          <NavItem label="Home" href="/main" />
-          <NavItem label="Courses" href="/course" />
-          <NavItem label="About Us" href="/about" />
-          <NavItem label="Pages" />
-          <NavItem label="Contact Us" href="/contack" />
-        </nav>
-
-        {/* İkonlar */}
-        <div className="flex items-center space-x-4 text-gray-100 text-xl">
-          <button title="Axtarış">
-            <CiSearch />
-          </button>
-          <button title="Profil">
-            <RxAvatar />
-          </button>
-          <button title="Səbət">
-            <MdOutlineShoppingBag className="text-white" />
-          </button>
+    <div className="border-b shadow-2xl ">
+      <div className="container">
+        <div className="header my-4 mx-auto flex items-center justify-between ">
+          <Logo />
+          <CategoryBar />
+          <SearchBar />
+          <Navigation />
+          <Basket />
+          <UserActions />
         </div>
       </div>
-    </header>
+    </div>
   );
-}
+};
 
-// Naviqasiya itemi
-function NavItem({
-  label,
-  href = "#",
-}: {
-  label: string;
-  href?: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className="flex items-center gap-1 hover:text-gray-200"
-    >
-      {label}
-      <IoChevronDown className="text-sm" />
-    </Link>
-  );
-}
+export default Header;
