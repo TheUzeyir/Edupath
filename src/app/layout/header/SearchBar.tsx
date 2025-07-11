@@ -18,13 +18,13 @@ const SearchBar = () => {
           fill="none"
           className="text-gray-400 hover:text-blue-500 duration-300"
         >
-          <path
+          {/* <path
             d="M16.0004 16L12.3754 12.375M14.3333 7.66665C14.3333 11.3485 11.3485 14.3333 7.66665 14.3333C3.98476 14.3333 1 11.3485 1 7.66665C1 3.98476 3.98476 1 7.66665 1C11.3485 1 14.3333 3.98476 14.3333 7.66665Z"
             stroke="currentColor"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
-          ></path>
+          ></path> */}
         </svg>
       </div>
     </div>
