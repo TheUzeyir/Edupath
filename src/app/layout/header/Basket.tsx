@@ -1,10 +1,11 @@
+// components/Basket.tsx
 import React from "react";
-
 
 const Basket = () => {
   return (
-    <div className="basket mx-5 relative group pr-8 py-1 border-r ">
-      <svg className="group-hover:text-blue-500      text-gray-600 transition-colors duration-300"
+    <div className="basket mx-5 relative group pr-8 py-1 border-r">
+      <svg
+        className="group-hover:text-blue-500 text-gray-600 transition-colors duration-300"
         width="20"
         height="22"
         viewBox="0 0 20 22"
@@ -19,30 +20,32 @@ const Basket = () => {
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-        ></path>
+        />
         <path
           d="M5.73156 5.59824C5.73156 3.21216 7.66585 1.27787 10.0519 1.27787V1.27787C11.2009 1.273 12.3045 1.72603 13.1187 2.53679C13.9329 3.34754 14.3906 4.44923 14.3906 5.59824V5.59824"
           stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-        ></path>
+        />
         <path
           d="M7.08973 10.1017H7.1355"
           stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-        ></path>
+        />
         <path
           d="M12.9257 10.1017H12.9714"
           stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-        ></path>
+        />
       </svg>
-      <span className="absolute left-3 -top-3 inline-flex items-center justify-center w-6 h-6 bg-[#5956E9] text-white text-xs font-bold rounded-full">1</span>
+      <span className="absolute left-3 -top-3 inline-flex items-center justify-center w-6 h-6 bg-[#5956E9] text-white text-xs font-bold rounded-full">
+        1
+      </span>
     </div>
   );
 };
